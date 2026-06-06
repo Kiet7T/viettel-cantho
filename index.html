@@ -371,6 +371,12 @@
   @media (max-width:1024px){.wc-banner img{height:120px}.wc-banner .wc-text{font-size:20px}}
   @media (max-width:640px){.wc-banner{flex-direction:column;gap:12px;padding:10px}.wc-banner img{height:84px}.wc-banner .wc-text{font-size:18px}}
 
+  /* WC text highlights */
+  .wc-text .wc-title{display:block;font-size:32px;letter-spacing:-1px}
+  .wc-text .wc-sub{display:block;font-size:15px;color:rgba(255,255,255,.85);margin-top:6px}
+  .wc-text .wc-highlight{display:block;margin-top:10px;font-size:22px;padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,rgba(255,107,133,.10),rgba(238,0,51,.06));border:1px solid rgba(255,107,133,.16);color:var(--red);font-weight:900;box-shadow:0 12px 40px rgba(238,0,51,.12)}
+  @media (max-width:640px){.wc-text .wc-title{font-size:20px}.wc-text .wc-highlight{font-size:16px;padding:8px}}
+
   #truyenhinh .section-title{color:#fff}
   #truyenhinh .section-desc{color:rgba(255,255,255,.7)}
   #truyenhinh .eyebrow{color:#FF6B85}
@@ -1103,7 +1109,11 @@
 
     <div class="wc-banner" role="note" aria-label="WC 2026 Partner">
       <img src="wordcup.webp" alt="World Cup badge" class="wc-animate" />
-      <div class="wc-text">TV360 Viettel<br>Hợp tác cùng Đài Truyền hình Việt Nam<br> Phát sóng World Cup 2026 Tại Việt Nam</div>
+      <div class="wc-text">
+        <span class="wc-title">TV360 Viettel</span>
+        <span class="wc-sub">Hợp tác cùng Đài Truyền hình Việt Nam (VTV)</span>
+        <span class="wc-highlight">⚽ Phát sóng World Cup 2026 tại Việt Nam</span>
+      </div>
       <div style="margin-left:12px">
         <a href="#truyenhinh" class="btn btn-primary" style="padding:12px 18px;font-size:16px">Xem lịch phát sóng</a>
       </div>
