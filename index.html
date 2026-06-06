@@ -95,17 +95,22 @@
     content:"";width:14px;height:14px;background:var(--red);
     border-radius:50%;box-shadow:0 0 0 4px rgba(238,0,51,.15);
   }
-  .nav-links{display:flex;gap:36px;list-style:none}
+  .nav-links{display:flex;gap:28px;list-style:none;align-items:center}
   .nav-links a{
-    color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px;
-    position:relative;transition:color .2s;
+    color:var(--ink);text-decoration:none;font-weight:700;font-size:15.5px;
+    position:relative;transition:all .22s;padding:8px 14px;border-radius:999px;
+    background:transparent;letter-spacing:.3px
   }
-  .nav-links a:hover{color:var(--red)}
+  .nav-links a:hover{
+    color:var(--red);background:var(--red-soft);transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(238,0,51,.06)
+  }
   .nav-links a::after{
-    content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;
-    background:var(--red);transition:width .3s;
+    content:"";position:absolute;left:8px;right:8px;bottom:-8px;height:3px;
+    width:0;background:var(--red);transition:width .28s;border-radius:3px;
   }
-  .nav-links a:hover::after{width:100%}
+  .nav-links a:hover::after{width:calc(100% - 16px)}
+  .nav-links a.active{background:var(--red);color:#fff;box-shadow:0 12px 30px -10px rgba(238,0,51,.35)}
   .nav-cta{
     background:var(--ink);color:#fff;border:none;
     padding:11px 22px;font-size:13.5px;font-weight:600;
